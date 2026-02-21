@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechGear Pro | e-Commerce Demo | Chao Wen Jie</title>
+    <link rel="stylesheet" href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/css/cisc3003-SugEx05-demo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Main Header with Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <!-- Logo and Brand Name -->
+                <div class="logo">
+                    <h1><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/public/cisc3003-SugEx05-demo.html">TechGear Pro</a></h1>
+                    <p class="subtitle">Premium Technology Products and Accessories</p>
+                </div>
+                
+                <!-- Mobile Menu Toggle -->
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
+                
+                <!-- Main Navigation Menu -->
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#categories" class="nav-link">Categories <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#laptops">Laptops</a></li>
+                            <li><a href="#smartphones">Smartphones</a></li>
+                            <li><a href="#accessories">Accessories</a></li>
+                            <li><a href="#wearables">Wearables</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#featured" class="nav-link">Featured Products</a></li>
+                    <li><a href="#new-arrivals" class="nav-link">New Arrivals</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#brands" class="nav-link">Brands</a></li>
+                    <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/public/cisc3003-sugEx03-showcase.html" class="nav-link">Back to Portfolio</a></li>
+                </ul>
+                
+                <!-- Shopping Cart Icon -->
+                <div class="cart-icon">
+                    <a href="#"><i class="fas fa-shopping-cart"></i> <span class="cart-count">3</span></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Banner Section -->
+    <section class="hero-banner" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>Premium Tech Experience</h2>
+                    <p>Discover the latest in technology with our curated collection of gadgets, accessories, and innovative solutions for modern living.</p>
+                    <a href="#featured" class="btn-primary">Shop Now</a>
+                </div>
+                <div class="hero-image">
+                    <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/images/12.jpg" alt="TechGear Pro Premium Products">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Categories Section -->
+    <section class="section" id="categories">
+        <div class="container">
+            <h2 class="section-title">Feature Categories</h2>
+            <p class="section-subtitle">Browse our carefully selected product categories</p>
+            
+            <div class="categories-grid">
+                <!-- Laptops Category -->
+                <div class="category-card" id="laptops">
+                    <div class="category-image">
+                        <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/images/13.jpg" alt="Laptops and Computers">
+                    </div>
+                    <div class="category-content">
+                        <h3>Laptops and Computers</h3>
+                        <p>High-performance laptops, desktops, and workstations for professionals and creatives.</p>
+                        <a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/public/allProducts.html?category=laptops" class="btn-small">Explore</a>
+                    </div>
+                </div>
+                
+                <!-- Smartphones Category -->
+                <div class="category-card" id="smartphones">
+                    <div class="category-image">
+                        <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/images/14.jpg" alt="Smartphones and Tablets">
+                    </div>
+                    <div class="category-content">
+                        <h3>Smartphones and Tablets</h3>
+                        <p>Latest smartphones, tablets, and mobile devices with cutting-edge technology.</p>
+                        <a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/public/allProducts.html?category=smartphones" class="btn-small">Explore</a>
+                    </div>
+                </div>
+                
+                <!-- Accessories Category -->
+                <div class="category-card" id="accessories">
+                    <div class="category-image">
+                        <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/images/15.jpg" alt="Tech Accessories">
+                    </div>
+                    <div class="category-content">
+                        <h3>Tech Accessories</h3>
+                        <p>Essential accessories including cases, chargers, headphones, and smart gadgets.</p>
+                        <a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/public/allProducts.html?category=accessories" class="btn-small">Explore</a>
+                    </div>
+                </div>
+                
+                <!-- Wearables Category -->
+                <div class="category-card" id="wearables">
+                    <div class="category-image">
+                        <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/images/16.jpg" alt="Wearable Technology">
+                    </div>
+                    <div class="category-content">
+                        <h3>Wearable Tech</h3>
+                        <p>Smartwatches, fitness trackers, and wearable devices for health and productivity.</p>
+                        <a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/public/allProducts.html?category=wearables" class="btn-small">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="section bg-light" id="featured">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <p class="section-subtitle">Best-selling items loved by our customers</p>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/images/17.jpg" alt="UltraBook Pro Laptop">
+                        <span class="product-badge">Best Seller</span>
+                    </div>
+                    <div class="product-content">
+                        <h3><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/public/productDetails.html?id=1">UltraBook Pro Laptop</a></h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-text">4.5 (128 reviews)</span>
+                        </div>
+                        <p class="product-description">14-inch display, 16GB RAM, 512GB SSD, Intel Core i7 processor</p>
+                        <div class="product-price">
+                            <span class="current-price">$1,299.99</span>
+                            <span class="original-price">$1,499.99</span>
+                        </div>
+                        <button class="btn-add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/images/18.jpg" alt="SmartPhone X">
+                        <span class="product-badge">New</span>
+                    </div>
+                    <div class="product-content">
+                        <h3><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/public/productDetails.html?id=2">SmartPhone X Pro</a></h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span class="rating-text">4.0 (96 reviews)</span>
+                        </div>
+                        <p class="product-description">6.7-inch OLED, 256GB storage, 48MP camera, 5G enabled</p>
+                        <div class="product-price">
+                            <span class="current-price">$899.99</span>
+                        </div>
+                        <button class="btn-add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/images/19.jpg" alt="Wireless Headphones">
+                    </div>
+                    <div class="product-content">
+                        <h3><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/public/productDetails.html?id=3">NoiseCancel Pro Headphones</a></h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-text">5.0 (204 reviews)</span>
+                        </div>
+                        <p class="product-description">Active noise cancellation, 30-hour battery, premium sound quality</p>
+                        <div class="product-price">
+                            <span class="current-price">$249.99</span>
+                            <span class="original-price">$299.99</span>
+                        </div>
+                        <button class="btn-add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/images/20.jpg" alt="Smart Watch">
+                    </div>
+                    <div class="product-content">
+                        <h3><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/public/productDetails.html?id=4">FitTrack Smart Watch</a></h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-text">4.5 (156 reviews)</span>
+                        </div>
+                        <p class="product-description">Health monitoring, GPS, water-resistant, 7-day battery life</p>
+                        <div class="product-price">
+                            <span class="current-price">$199.99</span>
+                        </div>
+                        <button class="btn-add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Products Section -->
+    <section class="section" id="new-arrivals">
+        <div class="container">
+            <h2 class="section-title">Latest Products</h2>
+            <p class="section-subtitle">Recently added to our collection</p>
+            
+            <div class="products-grid">
+                <!-- Latest Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/images/21.jpg" alt="Gaming Laptop">
+                        <span class="product-badge new">New</span>
+                    </div>
+                    <div class="product-content">
+                        <h3><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/public/productDetails.html?id=5">GameMaster Pro Laptop</a></h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span class="rating-text">4.0 (42 reviews)</span>
+                        </div>
+                        <p class="product-description">RTX 4070, 32GB RAM, 1TB SSD, 240Hz display for gaming</p>
+                        <div class="product-price">
+                            <span class="current-price">$2,199.99</span>
+                        </div>
+                        <button class="btn-add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Latest Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/images/22.jpg" alt="Tablet Pro">
+                        <span class="product-badge new">New</span>
+                    </div>
+                    <div class="product-content">
+                        <h3><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/public/productDetails.html?id=6">Tablet Pro Max</a></h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-text">4.5 (78 reviews)</span>
+                        </div>
+                        <p class="product-description">12.9-inch display, Apple M2 chip, 1TB storage, pro features</p>
+                        <div class="product-price">
+                            <span class="current-price">$1,299.99</span>
+                        </div>
+                        <button class="btn-add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Latest Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/images/23.jpg" alt="Wireless Earbuds">
+                        <span class="product-badge new">New</span>
+                    </div>
+                    <div class="product-content">
+                        <h3><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/public/productDetails.html?id=7">SoundPods Pro</a></h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-text">5.0 (63 reviews)</span>
+                        </div>
+                        <p class="product-description">True wireless, noise cancellation, 24-hour battery case</p>
+                        <div class="product-price">
+                            <span class="current-price">$179.99</span>
+                        </div>
+                        <button class="btn-add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Latest Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/images/24.jpg" alt="Portable SSD">
+                        <span class="product-badge new">New</span>
+                    </div>
+                    <div class="product-content">
+                        <h3><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/public/productDetails.html?id=8">ThunderDrive Portable SSD</a></h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-text">4.5 (91 reviews)</span>
+                        </div>
+                        <p class="product-description">2TB storage, USB-C, 1050MB/s read speed, rugged design</p>
+                        <div class="product-price">
+                            <span class="current-price">$249.99</span>
+                        </div>
+                        <button class="btn-add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Offer Section -->
+    <section class="section product-offer" id="offer">
+        <div class="container">
+            <div class="offer-content">
+                <div class="offer-text">
+                    <h2>Special Offer</h2>
+                    <h3>Exclusive Bundle Deal</h3>
+                    <p>Get the complete productivity package: UltraBook Pro Laptop + NoiseCancel Pro Headphones + ThunderDrive SSD</p>
+                    <div class="offer-price">
+                        <span class="original-combined">$1,799.97</span>
+                        <span class="offer-combined">$1,499.99</span>
+                        <span class="savings">Save $299.98</span>
+                    </div>
+                    <p class="offer-details">Limited time offer. Bundle includes premium accessories and extended warranty.</p>
+                    
+                    <!-- Countdown Timer Display -->
+                    <div class="countdown-timer">
+                        <p>Offer ends in:</p>
+                        <div class="timer-display">
+                            <div class="timer-block">
+                                <span id="days">00</span>
+                                <span class="timer-label">Days</span>
+                            </div>
+                            <div class="timer-block">
+                                <span id="hours">00</span>
+                                <span class="timer-label">Hours</span>
+                            </div>
+                            <div class="timer-block">
+                                <span id="minutes">00</span>
+                                <span class="timer-label">Minutes</span>
+                            </div>
+                            <div class="timer-block">
+                                <span id="seconds">00</span>
+                                <span class="timer-label">Seconds</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn-primary btn-large">Get This Deal</button>
+                </div>
+                <div class="offer-image">
+                    <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/images/25.jpg" alt="Special Bundle Offer">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section bg-light" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Customer Testimonials</h2>
+            <p class="section-subtitle">What our customers say about us</p>
+            
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="customer-avatar">
+                            <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/images/35.jpg" alt="Customer Sarah Johnson">
+                        </div>
+                        <div class="customer-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Software Developer</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The UltraBook Pro is perfect for my development work. Fast, reliable, and the customer service was exceptional!"</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="customer-avatar">
+                            <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/images/26.jpg" alt="Customer Michael Chen">
+                        </div>
+                        <div class="customer-info">
+                            <h4>Michael Chen</h4>
+                            <p>Graphic Designer</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">"Amazing product quality and fast shipping. The Tablet Pro Max has revolutionized my design workflow."</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="customer-avatar">
+                            <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/images/27.jpg" alt="Customer Emma Wilson">
+                        </div>
+                        <div class="customer-info">
+                            <h4>Emma Wilson</h4>
+                            <p>University Student</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Great prices and excellent customer support. My SmartPhone X Pro arrived quickly and works perfectly!"</p>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="customer-avatar">
+                            <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/images/28.jpg" alt="Customer David Park">
+                        </div>
+                        <div class="customer-info">
+                            <h4>David Park</h4>
+                            <p>Business Consultant</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Professional service and high-quality products. The bundle deal saved me hundreds of dollars!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Brands Section -->
+    <section class="section" id="brands">
+        <div class="container">
+            <h2 class="section-title">Top Brands</h2>
+            <p class="section-subtitle">We partner with leading technology brands</p>
+            
+            <div class="brands-grid">
+                <div class="brand-logo">
+                    <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/images/29.jpg" alt="Apple">
+                    <p>Premium Devices</p>
+                </div>
+                <div class="brand-logo">
+                    <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/images/30.jpg" alt="Dell">
+                    <p>Business Solutions</p>
+                </div>
+                <div class="brand-logo">
+                    <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/images/31.jpg" alt="Samsung">
+                    <p>Innovation Leader</p>
+                </div>
+                <div class="brand-logo">
+                    <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/images/32.jpg" alt="Lenovo">
+                    <p>Reliable Performance</p>
+                </div>
+                <div class="brand-logo">
+                    <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/images/33.jpg" alt="HP">
+                    <p>Quality Computing</p>
+                </div>
+                <div class="brand-logo">
+                    <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/images/34.jpg" alt="Sony">
+                    <p>Audio Excellence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Column 1: Download Our App -->
+                <div class="footer-column">
+                    <h3>Download Our App</h3>
+                    <p>Get the best shopping experience on mobile</p>
+                    <div class="app-download">
+                        <a href="#" class="app-store">
+                            <i class="fab fa-apple"></i>
+                            <div>
+                                <span>Download on the</span>
+                                <strong>App Store</strong>
+                            </div>
+                        </a>
+                        <a href="#" class="play-store">
+                            <i class="fab fa-google-play"></i>
+                            <div>
+                                <span>Get it on</span>
+                                <strong>Google Play</strong>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Column 2: Our Logo -->
+                <div class="footer-column">
+                    <h3>TechGear Pro</h3>
+                    <p class="footer-tagline">Premium Technology Products and Accessories</p>
+                    <p class="footer-description">Providing cutting-edge technology solutions since 2023. Quality guaranteed with 24/7 customer support.</p>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fab fa-cc-apple-pay"></i>
+                    </div>
+                </div>
+                
+                <!-- Column 3: Useful Links -->
+                <div class="footer-column">
+                    <h3>Useful Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#featured">Featured Products</a></li>
+                        <li><a href="#new-arrivals">New Arrivals</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#brands">Brands</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4: Follow Us -->
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <p>Stay connected for latest updates and offers</p>
+                    <div class="social-media">
+                        <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link facebook">
+                            <i class="fab fa-facebook-f"></i> Facebook
+                        </a>
+                        <a href="https://x.com" target="_blank" rel="noopener" class="social-link twitter">
+                            <i class="fab fa-x"></i> X
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link instagram">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener" class="social-link youtube">
+                            <i class="fab fa-youtube"></i> YouTube
+                        </a>
+                    </div>
+                    <div class="newsletter">
+                        <h4>Subscribe to Newsletter</h4>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Your email address">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-info">
+                    <p><i class="fas fa-map-marker-alt"></i> University of Macau, Macau SAR, China</p>
+                    <p><i class="fas fa-phone"></i> +853 6829 7324 | <i class="fas fa-envelope"></i> DC32531@um.edu.mo</p>
+                </div>
+                <div class="copyright">
+                    <p><em>CISC3003 Web Programming - 2026: DC325315 CHAO WEN JIE</em></p>
+                    <p>&copy; 2024-2026 TechGear Pro. All rights reserved.</p>
+                    <p>This e-commerce website is a demonstration for academic purposes.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx05-2026FEB13/js/cisc3003-SugEx05-demo.js"></script>
+</body>
+</html>
