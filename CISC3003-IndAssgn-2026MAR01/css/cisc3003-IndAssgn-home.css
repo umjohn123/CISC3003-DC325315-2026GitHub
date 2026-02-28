@@ -1,0 +1,170 @@
+/*=============================================
+  cisc3003-IndAssgn-home.css
+  Custom styles for the home page, extending the base template (styles.css)
+=============================================*/
+
+/* Import the main template styles */
+@import url("styles.css");
+
+/* ---------- Personal Info (list) ---------- */
+.personal-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+    font-size: var(--small-font-size);
+}
+
+.info-item i {
+    color: var(--first-color);
+    font-size: 1.25rem;
+}
+
+/* ---------- Skill Tags ---------- */
+.skills-overview h4 {
+    margin-bottom: 1rem;
+    color: var(--title-color);
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.skill-tag {
+    background-color: var(--container-color);
+    padding: 0.4rem 1rem;
+    border-radius: 2rem;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    color: var(--title-color);
+    transition: background-color 0.3s;
+}
+
+.skill-tag:hover {
+    background-color: var(--first-color);
+    color: #fff;
+}
+
+/* ---------- Personal Photos Section ---------- */
+.personal-photos-section {
+    background-color: var(--container-color);
+}
+
+.personal-photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+.photo-item {
+    text-align: center;
+}
+
+.photo-item img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
+    transition: transform 0.3s;
+}
+
+.photo-item img:hover {
+    transform: scale(1.02);
+}
+
+.photo-caption {
+    margin-top: 0.75rem;
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+    font-style: italic;
+}
+
+/* ---------- Quick Links Section ---------- */
+.quick-links-section {
+    background-color: var(--body-color);
+}
+
+.quick-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.link-card {
+    background-color: var(--container-color);
+    padding: 2rem 1.5rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    box-shadow: 0 8px 20px hsla(0, 0%, 0%, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.link-card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 12px 28px hsla(0, 0%, 0%, 0.15);
+}
+
+.link-card i {
+    font-size: 2.5rem;
+    color: var(--first-color);
+    margin-bottom: 1rem;
+}
+
+.link-card h4 {
+    font-size: var(--h3-font-size);
+    margin-bottom: 0.75rem;
+    color: var(--title-color);
+}
+
+.link-card p {
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.button-small {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 2rem;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    transition: background-color 0.3s;
+}
+
+.button-small:hover {
+    background-color: var(--black-color);
+}
+
+/* ---------- Footer student ID line ---------- */
+.footer__copy em {
+    font-style: italic;
+    color: #aaa;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* ---------- Responsive adjustments ---------- */
+@media screen and (max-width: 768px) {
+    .personal-info {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-links {
+        grid-template-columns: 1fr;
+    }
+}

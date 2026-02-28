@@ -1,0 +1,129 @@
+/*=============================================
+  cisc3003-IndAssgn-projects.css
+  Custom styles for the projects page, extending the base template (styles.css)
+=============================================*/
+
+/* Import the main template styles */
+@import url("styles.css");
+
+/* ---------- Projects Intro Text ---------- */
+.projects__intro {
+    color: var(--text-color-light);
+    font-size: var(--normal-font-size);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* ---------- Project Meta (date) ---------- */
+.projects__meta {
+    font-size: var(--small-font-size);
+    color: var(--first-color);
+    font-weight: var(--font-medium);
+    margin-bottom: 0.5rem;
+}
+
+/* ---------- Project Features List ---------- */
+.projects__features {
+    list-style: none;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+.projects__features li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.projects__features i {
+    color: var(--first-color);
+    font-size: 1rem;
+}
+
+/* ---------- Project Tags ---------- */
+.projects__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.projects__tag {
+    background-color: var(--body-color);
+    padding: 0.3rem 1rem;
+    border-radius: 2rem;
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-medium);
+    color: var(--title-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.projects__tag:hover {
+    background-color: var(--first-color);
+    color: #fff;
+}
+
+/* ---------- Project Buttons (links) ---------- */
+.projects__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.projects__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: var(--first-color);
+    font-weight: var(--font-medium);
+    font-size: var(--small-font-size);
+    transition: color 0.3s;
+}
+
+.projects__link:hover {
+    color: var(--title-color);
+}
+
+/* ---------- Card Adjustments ---------- */
+.projects__card {
+    padding: 1.5rem;
+}
+
+.projects__data {
+    text-align: left;
+}
+
+.projects__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: 0.5rem;
+}
+
+.projects__description {
+    margin: 0.5rem 0;
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+/* ---------- Footer student ID line ---------- */
+.footer__copy em {
+    font-style: italic;
+    color: #aaa;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* ---------- Responsive Adjustments ---------- */
+@media screen and (max-width: 768px) {
+    .projects__buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects__features {
+        text-align: left;
+    }
+}

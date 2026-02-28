@@ -1,0 +1,278 @@
+/*=============================================
+  cisc3003-IndAssgn-profile.css
+  Custom styles for the profile page, extending the base template (styles.css)
+=============================================*/
+
+/* Import the main template styles */
+@import url("styles.css");
+
+/* ---------- Profile Hero ---------- */
+.profile-hero {
+    background: linear-gradient(135deg, hsla(14, 98%, 50%, 0.1), hsla(14, 98%, 50%, 0.05));
+    padding: 4rem 0 2rem;
+    text-align: center;
+}
+
+.profile-hero__title {
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+    margin-bottom: 0.5rem;
+}
+
+.profile-hero__subtitle {
+    color: var(--text-color-light);
+    font-size: var(--normal-font-size);
+}
+
+/* ---------- In‑page Navigation ---------- */
+.profile-nav {
+    background-color: var(--body-color);
+    border-bottom: 1px solid var(--container-color);
+    position: sticky;
+    top: var(--header-height);
+    z-index: var(--z-tooltip);
+    padding: 1rem 0;
+}
+
+.profile-nav__list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.profile-nav__link {
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.profile-nav__link:hover,
+.profile-nav__link:focus {
+    color: var(--first-color);
+    border-bottom-color: var(--first-color);
+}
+
+/* ---------- Values Grid (similar to services cards) ---------- */
+.values__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.values__card {
+    background-color: var(--container-color);
+    padding: 2rem 1.5rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 8px 20px hsla(0, 0%, 0%, 0.1);
+}
+
+.values__card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 12px 28px hsla(0, 0%, 0%, 0.15);
+}
+
+.values__icon {
+    font-size: 2.5rem;
+    color: var(--first-color);
+    margin-bottom: 1rem;
+}
+
+.values__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: 0.75rem;
+    color: var(--title-color);
+}
+
+.values__description {
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+}
+
+/* ---------- Career Goals (two‑column layout) ---------- */
+.career__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.career__text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.career__subtitle {
+    font-size: var(--h3-font-size);
+    color: var(--first-color);
+    margin-bottom: 0.5rem;
+}
+
+.career__text p {
+    color: var(--text-color);
+}
+
+.career__image {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.2);
+}
+
+.career__img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ---------- Technical Interests (project‑style cards) ---------- */
+.interests__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.interests__card {
+    background-color: var(--container-color);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 8px 20px hsla(0, 0%, 0%, 0.1);
+    transition: transform 0.3s;
+}
+
+.interests__card:hover {
+    transform: translateY(-0.5rem);
+}
+
+.interests__img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.interests__title {
+    font-size: var(--h3-font-size);
+    margin: 1.5rem 1rem 0.5rem;
+    color: var(--title-color);
+}
+
+.interests__description {
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+    margin: 0 1rem 1rem;
+}
+
+.interests__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0 1rem 1.5rem;
+}
+
+.interests__tag {
+    background-color: var(--body-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 2rem;
+    font-size: var(--smaller-font-size);
+    color: var(--title-color);
+}
+
+/* ---------- Philosophy Section ---------- */
+.philosophy__content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.philosophy__text {
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.philosophy__quote {
+    font-style: italic;
+    font-size: var(--h3-font-size);
+    color: var(--first-color);
+    background-color: var(--container-color);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    border-left: 5px solid var(--first-color);
+    text-align: left;
+    margin-top: 2rem;
+}
+
+/* ---------- Contact Details (simple list) ---------- */
+.contact__details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--container-color);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 8px 20px hsla(0, 0%, 0%, 0.1);
+}
+
+.contact__details p {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: var(--normal-font-size);
+    color: var(--title-color);
+}
+
+.contact__details i {
+    color: var(--first-color);
+    font-size: 1.5rem;
+}
+
+/* ---------- Footer student ID line ---------- */
+.footer__copy em {
+    font-style: italic;
+    color: #aaa;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* ---------- Responsive Adjustments ---------- */
+@media screen and (max-width: 768px) {
+    .profile-nav__list {
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .career__content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .career__image {
+        order: -1;
+    }
+
+    .values__grid,
+    .interests__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .philosophy__quote {
+        font-size: var(--normal-font-size);
+        padding: 1.5rem;
+    }
+
+    .contact__details {
+        padding: 1.5rem;
+    }
+}

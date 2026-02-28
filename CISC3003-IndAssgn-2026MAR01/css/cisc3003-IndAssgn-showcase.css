@@ -1,0 +1,78 @@
+/*=============================================
+  cisc3003-IndAssgn-showcase.css
+  Custom styles for the showcase page, extending the base template (styles.css)
+=============================================*/
+
+/* Import the main template styles */
+@import url("styles.css");
+
+/* ---------- Showcase Grid ---------- */
+.showcase__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+/* ---------- Showcase Item ---------- */
+.showcase__item {
+    background-color: var(--container-color);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 8px 20px hsla(0, 0%, 0%, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.showcase__item:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 12px 28px hsla(0, 0%, 0%, 0.15);
+}
+
+/* ---------- Showcase Image ---------- */
+.showcase__image {
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+}
+
+.showcase__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.showcase__item:hover .showcase__img {
+    transform: scale(1.05);
+}
+
+/* ---------- Showcase Caption ---------- */
+.showcase__caption {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.showcase__title {
+    font-size: var(--h3-font-size);
+    color: var(--title-color);
+    margin-bottom: 0.5rem;
+}
+
+.showcase__description {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+/* ---------- Footer student ID line ---------- */
+.footer__copy em {
+    font-style: italic;
+    color: #aaa;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* ---------- Responsive Adjustments ---------- */
+@media screen and (max-width: 768px) {
+    .showcase__grid {
+        grid-template-columns: 1fr;
+    }
+}

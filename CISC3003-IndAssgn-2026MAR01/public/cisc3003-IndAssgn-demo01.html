@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chao Wen Jie · Medical Q&A Demo</title>
+
+    <!-- Remix Icons (used by template) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css">
+
+    <!-- Main CSS (based on Bedimcode template) -->
+    <link rel="stylesheet" href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-IndAssgn-2026MAR01/css/cisc3003-IndAssgn-demo01.css">
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-IndAssgn-2026MAR01/public/cisc3003-IndAssgn-home.html" class="nav__logo">Chao Wen Jie</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-IndAssgn-2026MAR01/public/cisc3003-IndAssgn-home.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-IndAssgn-2026MAR01/public/cisc3003-IndAssgn-profile.html" class="nav__link">Profile</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-IndAssgn-2026MAR01/public/cisc3003-IndAssgn-projects.html" class="nav__link active-link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-IndAssgn-2026MAR01/public/cisc3003-IndAssgn-summary.html" class="nav__link">Summary</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-IndAssgn-2026MAR01/public/cisc3003-IndAssgn-showcase.html" class="nav__link">Showcase</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-IndAssgn-2026MAR01/public/cisc3003-IndAssgn-qualification.html" class="nav__link">Qualification</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== DEMO SECTION ====================-->
+        <section class="demo-section">
+            <div class="container">
+                <h1 class="demo-title">Medical Q&A System using LLM-Driven RAG</h1>
+                <p class="demo-period"><i class="ri-calendar-line"></i> September – December 2025</p>
+
+                <div class="demo-overview">
+                    <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-IndAssgn-2026MAR01/images/medical-qa-project.jpg" alt="Medical Q&A System overview" class="demo-main-img">
+                    <div class="demo-description">
+                        <h2>Project Overview</h2>
+                        <p>A healthcare information system that leverages Large Language Models with Retrieval-Augmented Generation (RAG) to provide accurate answers to medical queries. The system retrieves relevant medical literature from a vector database and uses an LLM to generate precise, context‑aware responses.</p>
+                    </div>
+                </div>
+
+                <div class="demo-details">
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li><strong>RAG Pipeline:</strong> Combines a retriever (ChromaDB) with a generator (LLaMA‑2) to produce evidence‑based answers.</li>
+                        <li><strong>Medical Corpus:</strong> Indexed a curated set of medical articles and PubMed abstracts.</li>
+                        <li><strong>User Interface:</strong> Simple web interface built with Streamlit for querying and displaying answers with source references.</li>
+                        <li><strong>Evaluation:</strong> Achieved 85% accuracy on a test set of 200 medical questions.</li>
+                    </ul>
+
+                    <h3>Technologies Used</h3>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">LangChain</span>
+                        <span class="tech-badge">ChromaDB</span>
+                        <span class="tech-badge">LLaMA‑2</span>
+                        <span class="tech-badge">Streamlit</span>
+                    </div>
+
+                    <h3>My Contributions</h3>
+                    <p>Designed the RAG pipeline, implemented the document ingestion and retrieval modules, integrated the LLM, and built the front‑end interface. Also conducted the accuracy evaluation and fine‑tuned prompts for medical domain.</p>
+
+                    <h3>Project Gallery</h3>
+                    <div class="gallery">
+                        <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-IndAssgn-2026MAR01/images/Screenshot03.jpg" alt="Screenshot 1">
+                        <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-IndAssgn-2026MAR01/images/Screenshot02.jpg" alt="Screenshot 2">
+                        <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-IndAssgn-2026MAR01/images/Screenshot01.jpg" alt="Screenshot 3">
+                    </div>
+
+                    <div class="demo-links">
+                        <a href="#" class="button"><i class="ri-github-fill"></i> View Code</a>
+                        <a href="#" class="button button-ghost"><i class="ri-external-link-line"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div>
+                <a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-IndAssgn-2026MAR01/public/cisc3003-IndAssgn-home.html" class="footer__logo">Chao Wen Jie</a>
+                <p class="footer__description">Computer Science Student <br> University of Macau</p>
+                <p class="footer__description">Student ID: DC325315</p>
+            </div>
+
+            <div class="footer__content">
+                <div>
+                    <h3 class="footer__title">Explore</h3>
+                    <ul class="footer__links">
+                        <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-IndAssgn-2026MAR01/public/cisc3003-IndAssgn-home.html" class="footer__link">Home</a></li>
+                        <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-IndAssgn-2026MAR01/public/cisc3003-IndAssgn-profile.html" class="footer__link">Profile</a></li>
+                        <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-IndAssgn-2026MAR01/public/cisc3003-IndAssgn-projects.html" class="footer__link">Projects</a></li>
+                        <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-IndAssgn-2026MAR01/public/cisc3003-IndAssgn-summary.html" class="footer__link">Summary</a></li>
+                        <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-IndAssgn-2026MAR01/public/cisc3003-IndAssgn-showcase.html" class="footer__link">Showcase</a></li>
+                        <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-IndAssgn-2026MAR01/public/cisc3003-IndAssgn-qualification.html" class="footer__link">Qualification</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Contact</h3>
+                    <ul class="footer__links">
+                        <li><i class="ri-mail-line"></i> DC32531@um.edu.mo</li>
+                        <li><i class="ri-phone-line"></i> +86 173 6829 7324</li>
+                        <li><i class="ri-map-pin-line"></i> University of Macau</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Social</h3>
+                    <ul class="footer__social">
+                        <li><a href="https://www.linkedin.com/feed/" class="footer__social-link"><i class="ri-linkedin-line"></i></a></li>
+                        <li><a href="https://github.com/umjohn123" class="footer__social-link"><i class="ri-github-line"></i></a></li>
+                        <li><a href="#" class="footer__social-link"><i class="ri-dribbble-line"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <span class="footer__copy">
+            <em>CISC3003 Web Programming - 2026: DC325315 CHAO WEN JIE</em> <br>
+            &copy; 2025 Chao Wen Jie. All rights reserved.
+        </span>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-IndAssgn-2026MAR01/js/scrollreveal.min.js"></script>
+    
+    <!--=============== EMAIL JS (optional) ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-IndAssgn-2026MAR01/js/main.js"></script>
+</body>
+</html>

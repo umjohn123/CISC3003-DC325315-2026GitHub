@@ -1,0 +1,118 @@
+/*=============================================
+  cisc3003-IndAssgn-qualification.css
+  Custom styles for the qualification page, extending the base template (styles.css)
+=============================================*/
+
+/* Import the main template styles */
+@import url("styles.css");
+
+/* ---------- Qualification Grid ---------- */
+.qualification__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* ---------- Qualification Card ---------- */
+.qualification__card {
+    background-color: var(--container-color);
+    padding: 2rem 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 20px hsla(0, 0%, 0%, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid transparent;
+}
+
+.qualification__card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 12px 28px hsla(0, 0%, 0%, 0.15);
+    border-color: var(--first-color);
+}
+
+.qualification__title {
+    font-size: var(--h3-font-size);
+    color: var(--first-color);
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--first-color);
+    padding-bottom: 0.5rem;
+}
+
+.qualification__card p {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.qualification__card strong {
+    color: var(--title-color);
+}
+
+/* ---------- List inside card ---------- */
+.qualification__list {
+    list-style: none;
+    padding: 0;
+}
+
+.qualification__list li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.2rem;
+    position: relative;
+    color: var(--text-color);
+}
+
+.qualification__list li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--first-color);
+}
+
+/* ---------- Skill Tags ---------- */
+.qualification__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 0.5rem;
+}
+
+.qualification__tag {
+    background-color: var(--body-color);
+    padding: 0.4rem 1rem;
+    border-radius: 2rem;
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-medium);
+    color: var(--title-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.qualification__tag:hover {
+    background-color: var(--first-color);
+    color: #fff;
+}
+
+/* ---------- Contact info inside card ---------- */
+.qualification__card i {
+    color: var(--first-color);
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+/* ---------- Footer student ID line ---------- */
+.footer__copy em {
+    font-style: italic;
+    color: #aaa;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* ---------- Responsive Adjustments ---------- */
+@media screen and (max-width: 768px) {
+    .qualification__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .qualification__card {
+        padding: 1.5rem;
+    }
+}
