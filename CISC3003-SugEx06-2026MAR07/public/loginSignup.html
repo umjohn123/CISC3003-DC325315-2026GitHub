@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Sign Up | TechGear Pro</title>
+    <!-- Shared CSS (includes all page styles) -->
+    <link rel="stylesheet" href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/css/cisc3003-SugEx06-demo.css">
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ========== HEADER (same as homepage) ========== -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html">TechGear Pro</a></h1>
+                    <p class="subtitle">Premium Technology Products and Accessories</p>
+                </div>
+
+                <!-- Mobile menu toggle -->
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
+
+                <!-- Main navigation -->
+                <ul class="nav-menu">
+                    <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#home" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#categories" class="nav-link">Categories <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#laptops">Laptops</a></li>
+                            <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#smartphones">Smartphones</a></li>
+                            <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#accessories">Accessories</a></li>
+                            <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#wearables">Wearables</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#featured" class="nav-link">Featured</a></li>
+                    <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#new-arrivals" class="nav-link">New Arrivals</a></li>
+                    <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#brands" class="nav-link">Brands</a></li>
+                    <!-- Account link (active) -->
+                    <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/loginSignup.html" class="nav-link active"><i class="fas fa-user"></i> Account</a></li>
+                    <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx03-showcase.html" class="nav-link">Back to Portfolio</a></li>
+                </ul>
+
+                <!-- Cart icon (links to shopping cart page) -->
+                <div class="cart-icon">
+                    <a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/shoppingCart.html"><i class="fas fa-shopping-cart"></i> <span class="cart-count">3</span></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========== MAIN SECTION ========== -->
+    <section class="login-section">
+        <div class="container">
+            <!-- Split card: left = cover image, right = tabbed forms -->
+            <div class="login-split-card">
+                <!-- Left side: cover image with overlay text -->
+                <div class="card-left">
+                    <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/images/cover-1.jpg" alt="Tech products showcase" class="cover-image">
+                    <div class="cover-overlay">
+                        <h2>Welcome to TechGear Pro</h2>
+                        <p>Sign in to access your account or create a new one to enjoy exclusive offers and a personalized shopping experience.</p>
+                    </div>
+                </div>
+
+                <!-- Right side: tabbed forms -->
+                <div class="card-right">
+                    <!-- Tab headers -->
+                    <div class="tab-headers">
+                        <button class="tab-btn active" id="login-tab">Login</button>
+                        <button class="tab-btn" id="signup-tab">Create Account</button>
+                    </div>
+
+                    <!-- Tab content container -->
+                    <div class="tab-content-container">
+                        <!-- Login form (visible by default) -->
+                        <div class="tab-pane active" id="login-pane">
+                            <form id="login-form">
+                                <div class="form-group">
+                                    <label for="login-email">Email</label>
+                                    <input type="email" id="login-email" placeholder="your@email.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="login-password">Password</label>
+                                    <input type="password" id="login-password" placeholder="••••••••" required>
+                                </div>
+                                <div class="form-group remember-me">
+                                    <input type="checkbox" id="remember-me"> 
+                                    <label for="remember-me">Remember me</label>
+                                </div>
+                                <button type="submit" class="btn-primary btn-block">Login</button>
+                                <p class="forgot-password"><a href="#">Forgot password?</a></p>
+                            </form>
+                        </div>
+
+                        <!-- Signup form (hidden initially) -->
+                        <div class="tab-pane" id="signup-pane">
+                            <form id="signup-form">
+                                <div class="form-group">
+                                    <label for="signup-name">Full Name</label>
+                                    <input type="text" id="signup-name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="signup-email">Email</label>
+                                    <input type="email" id="signup-email" placeholder="your@email.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="signup-password">Password</label>
+                                    <input type="password" id="signup-password" placeholder="Create a strong password" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="signup-confirm">Confirm Password</label>
+                                    <input type="password" id="signup-confirm" placeholder="Re-enter password" required>
+                                </div>
+                                <div class="form-group terms">
+                                    <input type="checkbox" id="terms" required> 
+                                    <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+                                </div>
+                                <button type="submit" class="btn-primary btn-block">Sign Up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER (same as homepage) ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Column 1: Download App -->
+                <div class="footer-column">
+                    <h3>Download Our App</h3>
+                    <p>Get the best shopping experience on mobile</p>
+                    <div class="app-download">
+                        <a href="#" class="app-store"><i class="fab fa-apple"></i><div><span>Download on the</span><strong>App Store</strong></div></a>
+                        <a href="#" class="play-store"><i class="fab fa-google-play"></i><div><span>Get it on</span><strong>Google Play</strong></div></a>
+                    </div>
+                </div>
+                <!-- Column 2: Brand Info -->
+                <div class="footer-column">
+                    <h3>TechGear Pro</h3>
+                    <p class="footer-tagline">Premium Technology Products and Accessories</p>
+                    <p class="footer-description">Providing cutting-edge technology solutions since 2023.</p>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i><i class="fab fa-cc-mastercard"></i><i class="fab fa-cc-paypal"></i><i class="fab fa-cc-apple-pay"></i>
+                    </div>
+                </div>
+                <!-- Column 3: Useful Links -->
+                <div class="footer-column">
+                    <h3>Useful Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#home">Home</a></li>
+                        <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#categories">Categories</a></li>
+                        <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#featured">Featured Products</a></li>
+                        <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#new-arrivals">New Arrivals</a></li>
+                        <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#testimonials">Testimonials</a></li>
+                        <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#brands">Brands</a></li>
+                        <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/allProducts.html">All Products</a></li>
+                        <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/shoppingCart.html">Cart</a></li>
+                        <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/loginSignup.html">Account</a></li>
+                    </ul>
+                </div>
+                <!-- Column 4: Follow Us & Newsletter -->
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <p>Stay connected for latest updates and offers</p>
+                    <div class="social-media">
+                        <a href="https://facebook.com" target="_blank" class="social-link facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+                        <a href="https://x.com" target="_blank" class="social-link twitter"><i class="fab fa-x"></i> X</a>
+                        <a href="https://instagram.com" target="_blank" class="social-link instagram"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="https://youtube.com" target="_blank" class="social-link youtube"><i class="fab fa-youtube"></i> YouTube</a>
+                    </div>
+                    <div class="newsletter">
+                        <h4>Subscribe to Newsletter</h4>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Your email address">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-info">
+                    <p><i class="fas fa-map-marker-alt"></i> University of Macau, Macau SAR, China</p>
+                    <p><i class="fas fa-phone"></i> +853 6829 7324 | <i class="fas fa-envelope"></i> DC32531@um.edu.mo</p>
+                </div>
+                <div class="copyright">
+                    <p><em>CISC3003 Web Programming - 2026: DC325315 CHAO WEN JIE</em></p>
+                    <p>&copy; 2024-2026 TechGear Pro. All rights reserved.</p>
+                    <p>This e-commerce website is a demonstration for academic purposes.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript (shared) -->
+    <script src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/js/cisc3003-SugEx06-demo.js"></script>
+    <script src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/js/loginSignup.js"></script>
+</body>
+</html>

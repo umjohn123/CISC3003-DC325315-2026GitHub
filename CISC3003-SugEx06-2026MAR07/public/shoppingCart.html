@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | TechGear Pro</title>
+    <!-- CSS: relative path -->
+    <link rel="stylesheet" href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/css/cisc3003-SugEx06-demo.css">
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ========== HEADER (same as homepage) ========== -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <!-- Logo -->
+                <div class="logo">
+                    <h1><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html">TechGear Pro</a></h1>
+                    <p class="subtitle">Premium Technology Products and Accessories</p>
+                </div>
+
+                <!-- Mobile menu toggle -->
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
+
+                <!-- Main navigation -->
+                <ul class="nav-menu">
+                    <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#home" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#categories" class="nav-link">Categories <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#laptops">Laptops</a></li>
+                            <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#smartphones">Smartphones</a></li>
+                            <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#accessories">Accessories</a></li>
+                            <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#wearables">Wearables</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#featured" class="nav-link">Featured</a></li>
+                    <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#new-arrivals" class="nav-link">New Arrivals</a></li>
+                    <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#brands" class="nav-link">Brands</a></li>
+                    <!-- Cart and Account links -->
+                    
+                    <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/loginSignup.html" class="nav-link"><i class="fas fa-user"></i> Account</a></li>
+                    <!-- Back to portfolio (adjust path as needed) -->
+                    <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx03-showcase.html" class="nav-link">Back to Portfolio</a></li>
+                </ul>
+
+                <!-- Cart icon (visible on desktop) -->
+                <div class="cart-icon">
+                    <a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/shoppingCart.html"><i class="fas fa-shopping-cart"></i> <span class="cart-count">3</span></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========== PAGE BANNER ========== -->
+    <div class="page-banner">
+        <div class="container">
+            <h1>Shopping Cart</h1>
+            <p>Review and manage the items you have added</p>
+        </div>
+    </div>
+
+    <!-- ========== CART SECTION ========== -->
+    <section class="section cart-section">
+        <div class="container">
+            <div class="cart-page">
+                <!-- Cart items table (mobile friendly) -->
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Subtotal</th>
+                            <th>Remove</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items-body">
+                        <!-- Example row 1: UltraBook Pro -->
+                        <tr>
+                            <td data-label="Product">
+                                <div class="cart-product-info">
+                                    <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/images/17.jpg" alt="UltraBook Pro">
+                                    <div>
+                                        <h2>UltraBook Pro Laptop</h2>
+                                        <small>Color: Silver, RAM: 16GB</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td data-label="Price">$1,299.99</td>
+                            <td data-label="Quantity">
+                                <input type="number" class="cart-quantity" value="1" min="1" data-price="1299.99">
+                            </td>
+                            <td data-label="Subtotal" class="cart-subtotal">$1,299.99</td>
+                            <td data-label="Remove">
+                                <button class="remove-btn"><i class="fas fa-trash-alt"></i></button>
+                            </td>
+                        </tr>
+                        <!-- Example row 2: NoiseCancel Pro Headphones -->
+                        <tr>
+                            <td data-label="Product">
+                                <div class="cart-product-info">
+                                    <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/images/19.jpg" alt="NoiseCancel Pro">
+                                    <div>
+                                        <h2>NoiseCancel Pro Headphones</h2>
+                                        <small>Color: Black</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td data-label="Price">$249.99</td>
+                            <td data-label="Quantity">
+                                <input type="number" class="cart-quantity" value="1" min="1" data-price="249.99">
+                            </td>
+                            <td data-label="Subtotal" class="cart-subtotal">$249.99</td>
+                            <td data-label="Remove">
+                                <button class="remove-btn"><i class="fas fa-trash-alt"></i></button>
+                            </td>
+                        </tr>
+                        <!-- Example row 3: ThunderDrive SSD -->
+                        <tr>
+                            <td data-label="Product">
+                                <div class="cart-product-info">
+                                    <img src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/images/24.jpg" alt="ThunderDrive SSD">
+                                    <div>
+                                        <h2>ThunderDrive Portable SSD</h2>
+                                        <small>2TB</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td data-label="Price">$249.99</td>
+                            <td data-label="Quantity">
+                                <input type="number" class="cart-quantity" value="1" min="1" data-price="249.99">
+                            </td>
+                            <td data-label="Subtotal" class="cart-subtotal">$249.99</td>
+                            <td data-label="Remove">
+                                <button class="remove-btn"><i class="fas fa-trash-alt"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Cart totals and actions -->
+                <div class="cart-totals">
+                    <h3>Cart Totals</h3>
+                    <div class="totals-row">
+                        <span>Subtotal</span>
+                        <span id="cart-subtotal">$1,799.97</span>
+                    </div>
+                    <div class="totals-row">
+                        <span>Shipping</span>
+                        <span>Free</span>
+                    </div>
+                    <hr>
+                    <div class="totals-row total">
+                        <span>Total</span>
+                        <span id="cart-total">$1,799.97</span>
+                    </div>
+                    <div class="cart-actions">
+                        <button class="btn-primary" id="checkout-btn">Proceed to Checkout</button>
+                        <a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/allProducts.html" class="btn-secondary">Continue Shopping</a>
+                    </div>
+                    <div class="coupon-section">
+                        <h4>Have a coupon?</h4>
+                        <div class="coupon-form">
+                            <input type="text" placeholder="Coupon code" id="coupon-code">
+                            <button class="btn-small" id="apply-coupon">Apply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER (same as homepage) ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Column 1: Download App -->
+                <div class="footer-column">
+                    <h3>Download Our App</h3>
+                    <p>Get the best shopping experience on mobile</p>
+                    <div class="app-download">
+                        <a href="#" class="app-store"><i class="fab fa-apple"></i><div><span>Download on the</span><strong>App Store</strong></div></a>
+                        <a href="#" class="play-store"><i class="fab fa-google-play"></i><div><span>Get it on</span><strong>Google Play</strong></div></a>
+                    </div>
+                </div>
+                <!-- Column 2: Brand Info -->
+                <div class="footer-column">
+                    <h3>TechGear Pro</h3>
+                    <p class="footer-tagline">Premium Technology Products and Accessories</p>
+                    <p class="footer-description">Providing cutting-edge technology solutions since 2023. Quality guaranteed with 24/7 customer support.</p>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i><i class="fab fa-cc-mastercard"></i><i class="fab fa-cc-paypal"></i><i class="fab fa-cc-apple-pay"></i>
+                    </div>
+                </div>
+                <!-- Column 3: Useful Links -->
+                <div class="footer-column">
+                    <h3>Useful Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#home">Home</a></li>
+                        <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#categories">Categories</a></li>
+                        <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#featured">Featured Products</a></li>
+                        <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#new-arrivals">New Arrivals</a></li>
+                        <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#testimonials">Testimonials</a></li>
+                        <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/cisc3003-sugEx06-demo.html#brands">Brands</a></li>
+                        <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/allProducts.html">All Products</a></li>
+                        <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/shoppingCart.html">Cart</a></li>
+                        <li><a href="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/loginSignup.html">Account</a></li>
+                    </ul>
+                </div>
+                <!-- Column 4: Follow Us & Newsletter -->
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <p>Stay connected for latest updates and offers</p>
+                    <div class="social-media">
+                        <a href="https://facebook.com" target="_blank" class="social-link facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+                        <a href="https://x.com" target="_blank" class="social-link twitter"><i class="fab fa-x"></i> X</a>
+                        <a href="https://instagram.com" target="_blank" class="social-link instagram"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="https://youtube.com" target="_blank" class="social-link youtube"><i class="fab fa-youtube"></i> YouTube</a>
+                    </div>
+                    <div class="newsletter">
+                        <h4>Subscribe to Newsletter</h4>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Your email address">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-info">
+                    <p><i class="fas fa-map-marker-alt"></i> University of Macau, Macau SAR, China</p>
+                    <p><i class="fas fa-phone"></i> +853 6829 7324 | <i class="fas fa-envelope"></i> DC32531@um.edu.mo</p>
+                </div>
+                <div class="copyright">
+                    <p><em>CISC3003 Web Programming - 2026: DC325315 CHAO WEN JIE</em></p>
+                    <p>&copy; 2024-2026 TechGear Pro. All rights reserved.</p>
+                    <p>This e-commerce website is a demonstration for academic purposes.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shared JavaScript (includes cart functionality) -->
+    <script src="D:/cisc3003-2026/cisc3003-dc325315-2026/CISC3003-SugEx06-2026MAR07/public/js/cisc3003-SugEx06-demo.js"></script>
+</body>
+</html>
