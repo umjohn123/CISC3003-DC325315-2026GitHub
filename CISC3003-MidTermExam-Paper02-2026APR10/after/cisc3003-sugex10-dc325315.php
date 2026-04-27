@@ -1,10 +1,8 @@
 <?php
 include './includes/book-utilities.inc.php';
 
-// 读取客户数据
 $customers = readCustomers('./data/customers.txt');
 
-// 获取选中的客户ID
 $selectedId = isset($_GET['id']) ? trim($_GET['id']) : '';
 $selectedCustomer = null;
 $orders = [];
@@ -18,7 +16,7 @@ if ($selectedId !== '' && isset($customers[$selectedId])) {
 <html lang="en">
 
 <head>
-    <title>CISC3003 Suggested Exercise 10</title>
+    <title>CISC3003 Suggested Exercise 10 - DC325315 CHAO WEN JIE</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -48,7 +46,6 @@ if ($selectedId !== '' && isset($customers[$selectedId])) {
 
             <div class="mdl-grid">
 
-              <!-- 客户列表卡片 -->
               <div class="mdl-cell mdl-cell--7-col card-lesson mdl-card  mdl-shadow--2dp">
                 <div class="mdl-card__title mdl-color--orange">
                   <h2 class="mdl-card__title-text">Customers</h2>
@@ -81,12 +78,11 @@ if ($selectedId !== '' && isset($customers[$selectedId])) {
                       </tbody>
                     </table>
                 </div>
-              </div>  <!-- / mdl-cell + mdl-card -->
+              </div>
               
               
             <div class="mdl-grid mdl-cell--5-col">
     
-                  <!-- 客户详情卡片 -->
                   <div class="mdl-cell mdl-cell--12-col card-lesson mdl-card  mdl-shadow--2dp">
                     <div class="mdl-card__title mdl-color--deep-purple mdl-color-text--white">
                       <h2 class="mdl-card__title-text">Customer Details</h2>
@@ -113,11 +109,9 @@ if ($selectedId !== '' && isset($customers[$selectedId])) {
                             <p>Select a customer to view details.</p>
                         <?php endif; ?>
                     </div>    
-                  </div>  <!-- / mdl-cell + mdl-card -->   
+                  </div>
 
-                  <!-- 订单详情卡片 -->
-                  
-<div class="mdl-cell mdl-cell--12-col card-lesson mdl-card  mdl-shadow--2dp">
+                  <div class="mdl-cell mdl-cell--12-col card-lesson mdl-card  mdl-shadow--2dp">
     <div class="mdl-card__title mdl-color--deep-purple mdl-color-text--white">
         <h2 class="mdl-card__title-text">Order Details</h2>
     </div>
@@ -132,21 +126,16 @@ if ($selectedId !== '' && isset($customers[$selectedId])) {
             </thead>
             <tbody>
                 <?php if (!$selectedCustomer): ?>
-                    <!-- 未选择客户：表格体留空（或显示提示行） -->
-                   
                 <?php elseif (empty($orders)): ?>
-                    <!-- 已选客户但无订单 -->
                     <tr>
                         <td class="mdl-data-table__cell--non-numeric" colspan="3" style="text-align:center; color:#757575;">
                             No orders for this customer
                         </td>
                     </tr>
                 <?php else: ?>
-                    <!-- 已选客户且有订单 -->
                     <?php foreach ($orders as $order): ?>
                     <tr>
                         <td class="mdl-data-table__cell--non-numeric">
-                            <!-- 使用书籍图标作为封面占位符，您可根据需要替换为真实图片 -->
                             <img src="./images/tinysquare/<?= htmlspecialchars($order['isbn']) ?>.jpg" alt="Book Cover" style="width:40px; height:auto;">
                         </td>
                         <td class="mdl-data-table__cell--non-numeric">
@@ -161,16 +150,18 @@ if ($selectedId !== '' && isset($customers[$selectedId])) {
             </tbody>
         </table>
     </div>    
-</div>  <!-- / mdl-cell + mdl-card -->             
+</div>             
                </div>   
-            </div>  <!-- / mdl-grid -->    
+            </div>    
         </section>
     </main>    
-</div>    <!-- / mdl-layout --> 
+    <footer style="text-align: center; padding: 20px; font-size: 14px; color: #555; border-top: 1px solid #ccc; background-color: #f9f9f9;">
+    CISC3003 Web Programming: DC325315 CHAO WEN JIE 2026
+</footer> 
+</div>   
 
 <script>
 $(document).ready(function(){
-    // 初始化 sparkline 图表
     $('.sales-sparkline').sparkline('html', {
         type: 'bar',
         barColor: '#651FFF',
