@@ -1,0 +1,6 @@
+{
+    "name": "22066/cisc3003-final-exam-paper02b",
+    "require": {
+        "phpmailer/phpmailer": "^7.0"
+    }
+}
